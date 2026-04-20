@@ -73,7 +73,11 @@ export async function getStaysAfterDate(date) {
     .from("bookings")
     .select("*, guests(fullName)")
     .gte("startDate", date)
-    .lte("startDate", getToday());
+    .lte("startDate", getToday())
+    .or(`status.eq.checked-in,status.eq.checked-out`);
+
+  // Equivalent to this. But by querying this, we only download the data we actually need, otherwise we would need ALL bookings ever created
+  // (stay.status === 'checked-in' || stay.status === 'checked-out')
 
   if (error) {
     console.error(error);
