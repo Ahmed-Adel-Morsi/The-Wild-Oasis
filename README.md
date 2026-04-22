@@ -323,25 +323,6 @@ Guidelines for contributing to the project:
 
 This project is part of a learning curriculum and is designed for educational purposes.
 
-## 🆘 Support & Troubleshooting
-
-### Common Issues
-
-**Build Errors**
-
-- Clear node_modules and reinstall: `rm -rf node_modules && npm install`
-- Check Node.js version compatibility
-
-**Database Connection Issues**
-
-- Verify Supabase credentials in environment variables
-- Check internet connection to Supabase servers
-
-**Authentication Problems**
-
-- Clear browser cache and local storage
-- Verify user exists in Supabase Auth
-
 ## 🚀 Future Enhancements
 
 Potential features for future development:
