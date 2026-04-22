@@ -129,7 +129,7 @@ The Wild Oasis is a professional-grade management platform that enables hotel st
 
    ```bash
    git clone <repository-url>
-   cd 17-the-wild-oasis
+   cd the-wild-oasis
    ```
 
 2. **Install dependencies**
